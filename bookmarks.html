@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bookmarks | Learn French</title>
+
+    <!-- Linking Stylesheet main.css -->
+    <link rel="stylesheet" href="scss/main.css" type="text/css">
+    <link rel="stylesheet" href="scss/bookmarks.css" type="text/css">
+
+    <!-- Linking Favicon favicon -->
+    <link rel="icon" type="icon/x-image" href="/L1T20 Capstone Project/favicon.ico">
+
+    <!-- Link to Flag Icon Repository for CSS https://flagicons.lipis.dev by koppi and lipis on github -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css">
+
+    <!-- Font Awesome Icon Library -->
+    <script src="https://kit.fontawesome.com/d212f14b68.js" crossorigin="anonymous"></script>
+
+    <!-- Linking JQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="container">    
+        <!-- HEADER: MAIN HEADER, SITE NAVIGATION, SEARCH BAR -->
+        <header>
+            <h1><a href="/L1T20 Capstone Project/index.html">Learn French with Me</a></h1>
+            <!-- Top Navigation Bar -->
+            <nav>
+                <ul class="mainMenu">
+                    <!-- Homepage -->
+                    <li id="main-menu-home-button" class="home-button">
+                        <a class="main-navbar-button" href="index.html"><i class="fa-solid fa-house"></i> HOME</a>
+                    </li>
+                    <!-- Phrasebooks -->
+                    <li class="dropdown-button">
+                        <div id="main-menu-phrasebooks-button" class="dropdown">
+                            <a class="main-navbar-button" href="#"><i class="fa-solid fa-book-open"></i> Phrase Books</a>
+                            <div class="dropdown-content">
+                                <a href="phrasebooks-bonjour.html">Bonjour!</a>
+                                <a href="phrasebooks-bonappetit.html">Bon Appetit!</a>
+                                <a href="phrasebooks-bonvoyage.html">Bon Voyage!</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Vocabulary -->
+                    <li class="dropdown-button">
+                            <div id="main-menu-vocabulary-button" class="dropdown">
+                            <a class="main-navbar-button" href="#"><i class="fa-solid fa-language"></i> Vocabulary</a>
+                            <div class="dropdown-content">
+                                <a href="javascript:void(0)" class="notAllowed">Nouns</a> <!--vocabulary-nouns.html -->
+                                <a href="vocabulary-verbs.html">Verbs</a> <!--vocabulary-verbs.html-->
+                                <a href="javascript:void(0)" class="notAllowed">Adjectives</a> <!--vocabulary-adjectives.html -->
+                                <a href="javascript:void(0)" class="notAllowed">Top 1000 Words</a> <!-- vocabulary-top1000words.html-->
+                            </div>
+                            </div>
+
+                    </li>
+                    <!-- Grammar -->
+                    <li class="dropdown-button">
+                            <div id="main-menu-grammar-button" class="dropdown">
+                                <a class="main-navbar-button" href="#"><i class="fa-solid fa-spell-check"></i> Grammar</a>
+                                <div class="dropdown-content">
+                                    <a href="javascript:void(0)" class="notAllowed">Present Tense</a> <!--grammar-present.html-->
+                                    <a href="javascript:void(0)" class="notAllowed">Past Tense</a> <!--grammar-past.html-->
+                                    <a href="javascript:void(0)" class="notAllowed">Future Tense</a> <!--grammar-future.html-->
+                                    <a href="javascript:void(0)" class="notAllowed">Conditional </a> <!--grammar-conditional.html-->
+                                </div>
+                            </div>
+                    </li>
+                    <!-- Immersive French -->
+                    <li class="dropdown-button">
+                            <div id="main-menu-immersive-french-button" class="dropdown">
+                                <a class="main-navbar-button" href="#"><i class="fa-solid fa-photo-film"></i> Immersive French</a>
+                                <div class="dropdown-content">
+                                    <a href="javascript:void(0)" class="notAllowed">French Movies & Series</a> <!--immersive-movies.html-->
+                                    <a href="javascript:void(0)" class="notAllowed">French Podcasts</a> <!--immersive-podcasts.html-->
+                                    <a href="javascript:void(0)" class="notAllowed">French Music</a> <!--immersive-music-->
+                                    <a href="javascript:void(0)" class="notAllowed">Apps to Learn French</a> <!--immersive-apps.html-->
+                                </div>
+                            </div>
+                    </li>
+                    <!-- About Me -->
+                    <li id="main-menu-about-me-button" class="about-me-button">
+                        <a class="main-navbar-button" href="#"><i class="fa-solid fa-user"></i> About Me</a>
+                    </li>
+                    <!-- Saved Articles / Bookmarks / Reading List-->
+                    <li id="main-menu-bookmarks-button" class="bookmarks-button">
+                        <a class="main-navbar-button" href="bookmarks.html"><i class="fa-solid fa-bookmark"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <form class="search">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </header>
+
+        <!-- BOOKMARKS CONTAINER 1: SAVED ARTICLES  + FOOTER -->
+        <h2><i class="fa-solid fa-bookmark"></i> Bookmarks </i></h2>
+        <div id="save-for-later-container" class="grid-container-1">
+            <article id="savedArticle1" class="box-1 why-learn-french">
+                <div class="remove-bookmark-button">
+                    <i class="saved-article fa-xmark fa-solid" title="Delete bookmark"></i>
+                </div>
+            <h2  class="article-header">Why learn French?</h2>
+            <p>
+                When deciding on a foreign language to learn, its important to consider a few factors:
+            </p>
+                <ul>
+                    <li>
+                        Is the language widely spoken?
+                    </li>
+                    <li>
+                        In what contexts is this language useful?
+                    </li>
+                    <li>
+                        Is the language easy to learn?
+                    </li>
+                    <li>
+                        How easy is it to access language learning tools for this language?
+                    </li>
+                </ul>
+        </article>
+
+        <article id="savedArticle2" class="box-2 is-french-widely-spoken">
+            <div class="remove-bookmark-button">
+                <i class="saved-article fa-xmark fa-solid" title="Delete bookmark"></i>
+            </div>
+            <h3>Is French widely spoken?</h3>
+            <p>
+                French is the <a class="paragraph-link" href="https://www.weforum.org/agenda/2015/10/which-languages-are-most-widely-spoken/" target="_blank">fifth most widely spoken language</a> in the world and it is spoken on every continent. Estimated to be used by 
+                over 300 million people worldwide, French can be considered a versatile language as it has functions beyond the borders of France. 
+            </p>
+
+            <aside>
+                <h4>The most widely spoken languages in the world</h4>
+                <div class="language-graph">
+                    <span class="minimiser-maximiser-button"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></span>
+                    <a href="https://www.statista.com/statistics/266808/the-most-spoken-languages-worldwide/" rel="nofollow" target="_blank">
+                        <img id="statistaGraph"class="minimised"src="images/why-french/language-graph.jpg" alt="Graph of the most spoken languages worldwide in 2022 (by speakers in millions)">
+                    </a> 
+                    <p>
+                        <em>Graph of the most spoken languages worldwide in 2022 (by speakers in millions)</em> published by <a class="paragraph-link" href="https://www.statista.com" target="_blank">Statista</a>.
+                    </p>
+                </div>
+               
+            </aside>
+        </article>
+
+        <article id="savedArticle3" class="box-3 in-what-contexts-is-french-useful">
+            <div class="remove-bookmark-button">
+                <i class="saved-article fa-xmark fa-solid" title="Delete bookmark"></i>
+            </div>
+            <h3 id="contexts-french-is-useful">In what contexts is French useful?</h3>
+            <div class="context-text-container">
+                <p>
+                    Being proficient in French can make <mark>travelling</mark> to French speaking countries a lot easier. Having conversational French skills allow you, as a tourist, to communicate with locals without a hitch. This can make your travel experience all the more fun because you do not need to rely on
+                    translator apps to ask for directions or restaurant recommendations. <mark>Forming connections</mark> with people becomes easier allowing you to <mark>befriend locals</mark>- not <em>just</em> other tourists. Your experience of both business and leisure <mark>travel</mark> can be greatly ameliorated by speaking French. 
+                </p>
+
+                <p>
+                    French is often referred to as the language of <mark>love</mark>, however French is also a useful <mark> business</mark> language. Being a fluent French speaker opens doors to French schools and universities and allows one to <mark>study</mark>, live and <mark>work</mark> in Francophone countries too. Some of the best universities and colleges in the world are in French speaking countries making the language relevant if you 
+                    you are interested in studying at one of these institutions. Furthermore, <mark>international organisations</mark> like the <abbr title="World Health Organisation">WHO</abbr> and the <abbr title="United Nations">UN</abbr>, often use French as one of the languages of communication. If you are interested in working with or at global organisations, being fluent in French will set 
+                    you apart from other applicants and businesspeople.  
+                </p>
+            </div>
+            <div class="contexts-french-photobox">
+                <figure class="contextPhoto1Travel">
+                    <img id="contextPhoto1Travel"src="images/context-photo-1.jpg" alt="An unnamed traveller in the foreground looking at the list of departing flights in a busy airport terminal." title="Travel internationally with ease">
+                    <figcaption>
+                        Photo by <a href="https://unsplash.com/@odiin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erik Odiin</a> on <a href="https://unsplash.com/images/travel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+                <figure class="contextPhoto2Friends">
+                    <img id="contextPhoto2Friends"src="images/context-photo-2.jpg" alt="A friendship group of four unnamed young adults at a coffee shop laughing together" title="Make friends with locals">
+                    <figcaption>
+                        Photo by <a href="https://unsplash.com/ko/@brookecagle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke Cagle</a> on <a href="https://unsplash.com/photos/-uHVRvDr7pg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+                <figure class="contextPhoto3Love">
+                    <img id="contextPhoto3Love"src="images/context-photo-3.jpg" alt="A couple embraces on steps overlooking a quiet street in Montmartre, France" title="The language of love">
+                    <figcaption>
+                        Photo by <a href="https://unsplash.com/@jbonunsplash?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jean-Baptiste D.</a> on <a href="https://unsplash.com/photos/lofU3UFf3SU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+                <figure class="contextPhoto4Study">
+                    <img id="contextPhoto4Study"src="images/context-photo-4.jpg" alt="The grand looking entrance of Sorbonne University. The street is empty except for a solitary guard standing at the door. Carved in the ancient looking stone archway is 'L'Université de Paris'. " title="Worldclass Universities and Colleges">
+                    <figcaption>
+                        Photo by <a href="https://unsplash.com/@robinoode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robin Ooode</a> on <a href="https://unsplash.com/photos/nsHO6mtOsc4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+                <figure class="contextPhoto5Diplomacy">
+                    <img id="contextPhoto5Diplomacy"src="images/context-photo-5.jpg" alt="A close up of a United Nations branded notebook clutched under the arm of a man wearing a business suit and a sophisticated wristwatch." title="A language of diplomacy">
+                    <figcaption>
+                        Photo by <a href="https://unsplash.com/@ilyasssed?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilyass SEDDOUG</a> on <a href="https://unsplash.com/photos/06w8RxgSzF0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+                <figure class="contextPhoto6Business">
+                    <img id="contextPhoto6Business"src="images/context-photo-6.jpg" alt="A close up of the 'Business' section of a newspaper held by a well-dressed businessman." title="A language for global business, trade and commerce">
+                    <figcaption>
+                        Photo by <a href="https://unsplash.com/@adeolueletu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adeolu Eletu</a> on <a href="https://unsplash.com/photos/E7RLgUjjazc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </article>
+
+        <article id="savedArticle4" class="box-4 is-french-easy-to-learn">
+            <div class="remove-bookmark-button">
+                <i class="saved-article fa-xmark fa-solid" title="Delete bookmark"></i>
+            </div>
+            <h3>Is French easy to learn?</h3>
+            <p>
+                After English, French is the <a target="_blank" href="https://www.diplomatie.gouv.fr/en/coming-to-france/studying-in-france/learning-french/article/10-good-reasons-for-learning">second most learned foreign language</a> in the world. With so many people learning French, French learning and teaching techniques have been perfected. In addition to this, French has many similarities with 
+                English with both languages having "borrowed" words from each other. Native English speakers are at an advantage when learning French as the languages use the same alphabet and at times the same syntax is applied. There are areas of the French language that can be difficult for English speakers to master. Pronunciation and agreement between subjects and objects with other parts of speech in a sentence. Although these areas are challenging,
+                with practice and reptition, the learner will begin to do this intuitively. After learning French, learning other Romance Languages, namely Italian, Portuguese, Spanish, and Romanian, becomes easier as French contains the foundation upon which all Romance languages are built. 
+            </p>
+        </article>
+
+        <article id="savedArticle5" class="box-5 french-language-learning-tools">
+            <div class="remove-bookmark-button">
+                <i class="saved-article fa-xmark fa-solid" title="Delete bookmark"></i>
+            </div>
+            <h3>How easy is it to access French language learning tools?</h3>
+            <p>
+            This website is one of many French learning resources available to the aspiring French-speaker. Because French is so widely spoken, there are many free and affordable tools to learn French online and in-person. <br>The <a class="in-text-nav-button" href="javascript:void(0)"><i class="fa-solid fa-photo-film"></i> Immersive French</a> tab details a few of the 
+            best resources available to you. 
+            </p>
+            
+        </article>
+
+        <article id="savedArticle6" class="box-6 french-speaking-countries">
+            <div class="remove-bookmark-button">
+                <i class="saved-article fa-xmark fa-solid" title="Delete bookmark"></i>
+            </div>
+            <h2 id="french-speaking-countries">French Speaking Countries</h2>
+            <div class="tooltip">
+                <span class="fi fi-be"></span>
+                <span class="tooltiptext">
+                    Belgium
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-bj"></span>
+                <span class="tooltiptext">
+                    Bénin
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-bf"></span>
+                <span class="tooltiptext">
+                    Burkina Faso
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-bi"></span>
+                <span class="tooltiptext">
+                    Burundi
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-cm"></span>
+                <span class="tooltiptext">
+                    Cameroon
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-ca"></span>
+                <span class="tooltiptext">
+                    Canada
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-cf"></span>
+                <span class="tooltiptext">
+                    The Central African Republic
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-td"></span>
+                <span class="tooltiptext">
+                    Chad
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-km"></span>
+                <span class="tooltiptext">
+                    The Comoros
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-cg"></span>
+                <span class="tooltiptext">
+                    Congo (Brazzaville)
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-cd"></span>
+                <span class="tooltiptext">
+                    Congo (Kinshasa)
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-ci"></span>
+                <span class="tooltiptext">
+                    Côte d'Ivoire
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-dj"></span>
+                <span class="tooltiptext">
+                    Djibouti
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-gq"></span>
+                <span class="tooltiptext">
+                    Equatorial Guinea
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-fr"></span>
+                <span class="tooltiptext">
+                    France
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-ga"></span>
+                <span class="tooltiptext">
+                    Gabon
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-gn"></span>
+                <span class="tooltiptext">
+                    Guinee
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-ht"></span>
+                <span class="tooltiptext">
+                    Haïti
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-lu"></span>
+                <span class="tooltiptext">
+                    Luxembourg
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-mg"></span>
+                <span class="tooltiptext">
+                    Madagascar
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-ml"></span>
+                <span class="tooltiptext">
+                    Mali
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-mc"></span>
+                <span class="tooltiptext">
+                    Monaco
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-ne"></span>
+                <span class="tooltiptext">
+                The Niger
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-rw"></span>
+                <span class="tooltiptext">
+                    Rwanda
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-sn"></span>
+                <span class="tooltiptext">
+                    Senegal
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-sc"></span>
+                <span class="tooltiptext">
+                    Seychelles
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-ch"></span>
+                <span class="tooltiptext">
+                    Switzerland
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-tg"></span>
+                <span class="tooltiptext">
+                    Togo
+                </span>
+            </div>
+
+            <div class="tooltip">
+                <span class="fi fi-vu"></span>
+                <span class="tooltiptext">
+                    Vanuatu
+                </span>
+            </div>
+        </article>        
+    </div>
+        
+    </div> 
+    <footer>
+        <div class="box-10 homepage-footer-site-map">
+            <h5>Homepage</h5>
+            <ul class="footer-site-map">
+                <li><a href="#why-learn-french">Why Learn French?</a></li>
+                <li><a href="#french-speaking-countries">French Speaking Countries</a></li>
+                <li><a href="#who-is-this-site-for">Who is this website for?</a></li>
+            </ul>
+        </div>
+        <div class="box-11 phrasebooks-footer-site-map">
+            <h5>Phrase Books</h5>
+            <ul class="footer-site-map">
+                <li><a href="phrasebooks-bonjour.html">Bonjour!</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Bon Appéti!</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Bon voyage!</a></li>
+            </ul>
+        </div>
+
+        <div class="box-12 vocabulary-footer-site-map">
+            <h5>Vocabulary</h5>
+            <ul class="footer-site-map">
+                <li><a href="javascript:void(0)" class="notAllowed">Nouns</a></li>
+                <li><a href="vocabulary-verbs.html">Verbs</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Adjectives</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">1000 Most Used Words</a></li>
+
+            </ul>
+        </div>
+
+        <div class="box-13 grammar-footer-site-map">
+            <h5>Grammar</h5>
+            <ul class="footer-site-map">
+                <li><a href="javascript:void(0)" class="notAllowed">Present Tense</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Future Tense</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Past Tense</a></li>
+            </ul>
+        </div>
+
+        <div class="box-14 immersive-footer-site-map">
+            <h5>Immersive French</h5>
+            <ul class="footer-site-map">
+                <li><a href="javascript:void(0)" class="notAllowed">Movies & TV</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Podcast</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Music</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Courses & Classes</a></li>
+                <li><a href="javascript:void(0)" class="notAllowed">Mobile & Web Apps</a></li>
+            </ul>
+        </div>
+    
+        <div class=" box-15 copyrights-footer">
+
+            <h6><a href="#">Return to Top</a></h6>
+
+            <p>
+                Powered by Apollo <i class="fa-solid fa-user-astronaut"></i> | &copy; 2022 by Zandi Mgutshini. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- Linking javascript file -->
+    <script src="js/index.js"></script>
+    <!-- <script src="js/bookmarks.js"></script> -->
+</body>
+</html>
