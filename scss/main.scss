@@ -1,0 +1,1347 @@
+
+// Browns 
+$bold-brown-accent: #2F2723;
+$medium-brown-accent: #6B574C;
+$light-brown-accent: #98715D;
+// Reds
+$bold-red-accent: #C94B40;
+$medium-red-accent: #DB9C93;
+$light-red-accent: #EDCBC3; 
+$clear-red-accent:#edcbc380;
+//Blues
+$bold-blue-accent: #038199;
+$medium-blue-accent: #81BDC6;
+$light-blue-accent: #C0DBDD;
+$clear-blue-accent: #c0dbdd80;
+// Font and Background Colors
+$main-background-color: #ffffff;
+$main-background-color-clear: #ffffffa5;
+$dark-font-color: #090807;
+$dark-font-color-clear: #09080726;
+$light-font-color: #FEF9F3;
+$body-font-size: 16px;
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700;800&family=Mulish:ital,wght@0,400;0,700;1,400;1,700&family=MuseoModerno:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@400;700&display=swap');
+$header-font-family: 'Unbounded', cursive;
+// $subheader-font-family: 'MuseoModerno', cursive;
+$subheader-font-family: 'Merienda', cursive;
+$body-font-family: 'Mulish', sans-serif;
+
+// Global Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: $medium-blue-accent;
+  background-color: $medium-blue-accent;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+}
+div.container {
+    background-color: $medium-blue-accent;
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    padding: 10px 50px;
+}
+
+p {
+  padding: 5px 10px;
+  padding-bottom: 2px;
+}
+
+// ALL HEADER STYLING
+h1, 
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    font-family: $header-font-family;
+    text-align: left;
+    padding: 5px 10px;
+
+}
+
+h1 {
+    font-size: calc($body-font-size*2.5);
+    text-align: center;
+}
+
+h1 a:link, 
+h1 a:visited,
+h1 a:active {
+  text-decoration: none;
+  color: $light-font-color;
+}
+h1 a:hover {
+  opacity: 0.7;
+}
+
+p {
+  font-size: calc($body-font-size * 1.5);
+}
+
+// NAVIGATION BAR STYLING
+nav ul {
+    list-style-type: none;
+    background-color: none;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-family: $header-font-family;
+    font-size: $body-font-size;
+    color: $light-font-color;
+
+}
+
+nav li {
+    display:inline-block;
+    width: 210px;
+    padding: 10px 0; 
+    margin-top: 10px;
+    position:relative;
+    text-decoration: none;
+    color: $dark-font-color;
+    border-radius: 35px;
+    border: 1.5px solid $light-blue-accent;
+
+}
+
+nav a:link, 
+nav a:visited {
+    text-decoration: none;
+    color: $light-font-color;
+}
+
+nav li:hover {
+    background-color: $light-blue-accent;
+}
+nav li:hover i {
+  color: $medium-red-accent;
+}
+
+nav li:active {
+    background-color: $bold-blue-accent;
+}
+
+nav li:last-child:hover {
+  background-color: $light-red-accent;
+  border-color: $light-red-accent;
+}
+
+nav li:last-child:active {
+  background-color: $bold-red-accent;
+}
+nav li:last-child {
+  width: 50px;
+  background-color: $medium-red-accent;
+  border-color: $medium-red-accent;
+}
+nav li:last-child i {
+  font-size: larger;
+  color: $bold-red-accent;
+}
+
+// Div dropdown for dropdown content
+.dropdown {
+ position: relative;
+ display: inline-block;
+ width: 200px;
+}
+
+// dropdown-content styling (hidden)
+.dropdown-content {
+  position:absolute;
+  top:150%;
+  left:0;
+  width: 100%;
+  padding: 0 0;
+
+  display: none; //jQuery used to slideDown() and display content
+  background-color: $main-background-color;
+  border-radius: 25px;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+  z-index: 10;
+}
+
+.dropdown-content a:link,
+.dropdown-content a:visited {
+  color: $medium-blue-accent;
+  background-color: $main-background-color;
+  display:block;
+  text-decoration: none;
+  padding: 5px 0;
+  border-radius: 35px;
+}
+
+.dropdown-content a:hover {
+  background-color: $light-blue-accent;
+  color: $light-font-color;
+}
+
+nav li:hover .dropdown:hover .dropdown-button {
+  background-color: $medium-blue-accent;
+}
+
+// SEARCH BAR STYLING
+div.search-bar {
+    display:block;
+    margin: 10px 0;
+    width: 100%;
+    position:relative;
+    font-size: $body-font-size;
+}
+.search input[type=text] {
+    font-family: $header-font-family;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1.5px solid $light-blue-accent;
+    border-radius: 25px;
+    background-color: $main-background-color;
+}
+
+.search input[type=text]::placeholder {
+  color: $medium-blue-accent;
+  font-size: $body-font-size;
+}
+
+// Search Button positioned absolutely inside div class= search-bar
+.search button {
+    position: absolute;
+    font-size: $body-font-size;
+    padding: 5px 5px;
+    z-index: 6;
+    right: 0%;
+    top: 0%;
+    font-weight: bold;
+    color: $bold-red-accent;
+    background-color: $medium-red-accent;
+    border-radius: 25px;
+    box-shadow: none;
+    border: solid 0.2px $medium-red-accent;
+}
+
+.search button:hover {
+    background-color: $light-red-accent;
+    cursor: pointer;
+    border: solid 0.2px $light-red-accent;
+
+}
+
+.search i {
+    font-size: larger;
+    padding: 5px 5px;
+    border-radius: 25px;
+}
+
+// CAROUSEL OF IMAGES 1-5 USING CSS ONLY: 
+.carousel-of-images {
+    background-color: $bold-red-accent;
+    border-radius: 15px;
+    display: none;
+}
+
+.carousel-of-images h5 {
+  padding: 10px 0;
+  margin: 0 0;
+  color: $light-font-color;
+  font-family: $header-font-family;
+  // font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.carousel-wrapper {
+    height: 350px;
+    max-width: 1900px;
+    position:relative; // Set as relative for absolute positiong of caption
+    display: block;
+    margin: 0px auto;
+  }
+
+  .carousel-image {
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 15px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .arrow {
+    border: solid $bold-red-accent;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .arrow:hover {
+    border-color: $medium-red-accent;
+  }
+
+  .arrow-prev {
+    left: 5px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(-50%); 
+    rotate: 135deg;
+  }
+
+.arrow-next {
+    right: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    rotate: -45deg;
+    
+  }
+
+#carousel-image-1, 
+#carousel-image-2, 
+#carousel-image-3, 
+#carousel-image-4,
+#carousel-image-5 {
+  display:none;
+}
+
+// Styling the captions for each image 
+.carousel-image-caption p {
+    position: absolute;
+    text-align: center;
+    bottom: 1.5%;
+    left: 2.5%;
+    z-index: 6;
+    opacity: 0.7;
+    background: $main-background-color;
+
+    max-width: 200px;
+    padding: 5px 5px;
+    border-radius: 15px;
+
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    color: $dark-font-color;
+}
+
+.carousel-image-caption a:link, 
+.carousel-image-caption a:visited {
+    text-decoration: underline solid 1px $bold-red-accent;
+    color: $dark-font-color;
+    display: block; // This ensures that the author's name is on its own line
+}
+
+.carousel-image-caption a:hover, 
+.carousel-image-caption a:active {
+    text-decoration: underline solid 2px $bold-red-accent;
+    color: $bold-red-accent;
+    font-weight: 600;
+}
+
+// Linking the carousel images
+.carousel-image-1 { //Beachfront by Diane Picciottion
+  z-index: 2;
+  opacity: 1;
+  background: url('css-images/carousel-image-1.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 { //Pile of Books by Erik Mclean
+  background: url('css-images/carousel-image-2.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 { //Louvre by Gloria Villa
+  background: url('css-images/carousel-image-3.jpg');
+  background-size: cover;
+}
+
+.carousel-image-4 { // Cobbled Street by Reuben Mcfeeters
+    background: url('css-images/carousel-image-4.jpg');
+    background-size: cover;
+  }
+
+.carousel-image-5 { // French Flag by Cecile Hournau
+    background: url('css-images/carousel-image-5.jpg');
+    background-size: cover;
+}
+
+*:target ~ .carousel-image-1 {
+  opacity: 0;
+}
+
+// Displays carousel image 1
+#carousel-image-1:target ~.carousel-image-1 {
+  opacity: 1;
+}
+
+//
+#carousel-image-2:target ~ .carousel-image-2, 
+#carousel-image-3:target ~ .carousel-image-3, 
+#carousel-image-4:target ~ .carousel-image-4,
+#carousel-image-5:target ~ .carousel-image-5 {
+  z-index: 3;
+  opacity: 1;
+}
+
+// ********************* END OF HEADER ************************** //
+// BOXES 1 TO 14 ARE IN THE GRID CONTAINER DEFINED BELOW
+// .grid-container {
+//   display:grid;
+//   grid-template-columns: repeat(1fr, 12);
+//   grid-template-rows: repeat(auto, 13);
+//   gap: 5px;
+//   text-align: left;
+// }
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7,
+// .box-8,
+.box-9,
+.box-10,
+.box-11,
+.box-12,
+.box-13,
+.box-14 {
+  margin-top: 50px;
+  border-radius: 25px;
+  max-width: 100%;
+  position: relative;
+  // align-self: center;
+}
+
+.interaction-button-container {
+  position: absolute;
+  bottom: -10px;
+  right: -25px;
+  color: $light-font-color;
+}
+.interaction-button-container span {
+  display: block;
+  margin-bottom: 4px;
+  padding: 3px 3px;
+  border-radius: 18px;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+  min-width: 55px;
+  text-align: center;
+}
+.interaction-button-container .article-like-button {
+  background-color: #ff91a4;
+}
+.interaction-button-container .article-like-button:hover {
+  background-color: #ff5672;
+  -webkit-text-stroke: 0.2px $light-font-color;
+}
+
+.interaction-button-container .article-like-button.liked{
+  background-color: #ff91a4;
+}
+.interaction-button-container .article-like-button:hover {
+  background-color: #ff5672;
+  -webkit-text-stroke: 0.2px $light-font-color;
+}
+
+.interaction-button-container .article-share-button {
+  background-color: #6aa1d5;
+}
+.interaction-button-container .article-share-button:hover {
+  background-color: #3b79d6;
+  -webkit-text-stroke: 0.2px $light-font-color;
+
+}
+
+.interaction-button-container .article-comment-button {
+  background-color: #fbca59;
+}
+.interaction-button-container .article-comment-button:hover {
+  background-color: #fb9815;
+  -webkit-text-stroke: 0.2px $light-font-color;
+
+}
+
+// Styling the bookmark button to save and remove articles  
+div.bookmark-button,
+div.remove-bookmark-button {
+  position: absolute;
+  right: 5%;
+  top: 0%;
+  z-index: 10;
+  font-family: $header-font-family;
+}
+.fa-bookmark.unsaved-article {
+  color: $main-background-color;
+  -webkit-text-stroke: 2px $main-background-color;
+  font-size: calc($body-font-size * 3);
+}
+.fa-bookmark.saved-article,
+.fa-xmark {
+  color: $bold-red-accent;
+  -webkit-text-stroke: 3px $bold-red-accent;
+  font-size: calc($body-font-size * 3);
+}
+
+.fa-bookmark.unsaved-article:hover,
+.fa-xmark:hover {
+  color: $medium-red-accent;
+  -webkit-text-stroke: 3px $medium-red-accent;
+  cursor: pointer;
+}
+.fa-bookmark.saved-article:hover {
+  color: $light-red-accent;
+  -webkit-text-stroke: 3px $light-red-accent;
+  cursor: pointer;
+}
+
+// // DEFINING THE GRID BOX 1 - BOX 14
+// .box-1.why-learn-french { // Why learn French
+//   grid-column: 1/12;
+//   grid-row: 1;
+// }
+
+//   background-color: $medium-red-accent;
+//   border: solid 5px $medium-red-accent;
+// }
+
+// BOX 1 WHY LEARN FRENCH
+.box-1.why-learn-french {
+  // grid-column: 1/6;
+  // grid-row: 2;
+  background-color: $main-background-color-clear;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+  padding: 40px 20px;
+}
+.why-learn-french p {
+  font-size: calc($body-font-size * 1.5);
+}
+.why-learn-french ul {
+  list-style: none;
+  padding-left: 40px;
+}
+.why-learn-french li {
+  list-style-image: url("css-images/french-flag-bullet.png");
+  list-style-position: inside;
+  padding-bottom: 10px;
+  font-size: calc($body-font-size * 1.5);
+}
+
+// BOX 2 IS FRENCH WIDELY SPOKEN
+.box-2.is-french-widely-spoken { 
+  width: 100%; //remove if grid is used
+  background-color: $main-background-color-clear;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+  padding: 40px 20px;
+}
+.is-french-widely-spoken p {
+  font-size: calc($body-font-size * 1.5);
+}
+.box-2.is-french-widely-spoken img {
+  border-radius: 25px;
+  border-top-left-radius: 50px ;
+}
+
+
+div.language-graph {
+  position: relative;
+}
+
+.language-graph img.minimised{
+  width: 10%;
+}
+.language-graph img.maximised{
+  width: 80%;
+}
+.minimiser-maximiser-button {
+  position: absolute;
+  top: -1%;
+  left: 0%;
+}
+
+.fa-up-right-and-down-left-from-center,
+.fa-down-left-and-up-right-to-center {
+  color: $medium-red-accent;
+  -webkit-text-stroke: 1px $medium-red-accent;
+  font-size: calc($body-font-size * 1.5);
+}
+
+.fa-up-right-and-down-left-from-center:hover,
+.fa-down-left-and-up-right-to-center:hover {
+  color: $bold-red-accent;
+  -webkit-text-stroke: 2px $bold-red-accent;
+  font-size: calc($body-font-size * 1.5);
+  cursor:pointer;
+}
+// BOX 3 IN WHAT CONTEXTS IS FRENCH USEFUL
+.box-3.in-what-contexts-is-french-useful {
+  background-color: $main-background-color-clear;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+  padding: 40px 20px;
+}
+
+.contexts-french-photobox, 
+.context-text-container {
+  display: inline-block;
+  width: 100%;
+}
+.context-text-container {
+  padding-bottom: 20px;
+}
+.context-text-container mark {
+  background-color: $light-red-accent;
+  border-radius: 10px;
+  padding: 1px 2px;
+  letter-spacing: 1.5px;
+}
+
+.contexts-french-photobox {
+  text-align: center;
+}
+
+.contexts-french-photobox figure {
+  display: inline-block; 
+  width: 32%;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: $medium-blue-accent;
+  border-radius: 25px;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+}
+
+.contexts-french-photobox figure figcaption {
+  width: 100%;
+  color: $main-background-color;
+  font-size: calc($body-font-size * 0.75);
+  text-align: center;
+  opacity: 0.8;
+  // border-radius: 35px;
+  padding: 5px auto;
+}
+
+.contexts-french-photobox figcaption a {
+  text-decoration: none;
+  color: $main-background-color;
+  text-decoration: underline 2px $bold-blue-accent;
+}
+.contexts-french-photobox figcaption a:hover {
+  text-decoration: none;
+  color: $bold-blue-accent;
+  font-weight: bold;
+  text-decoration: underline 2px $bold-blue-accent;
+
+}
+
+.contexts-french-photobox img {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 25px;
+}
+#contextPhoto1Travel, 
+#contextPhoto2Friends, 
+#contextPhoto3Love, 
+#contextPhoto4Study, 
+#contextPhoto5Diplomacy, 
+#contextPhoto6Business {
+  display: none;
+}
+
+// BOX 4 IS FRENCH EASY TO LEARN
+.box-4.is-french-easy-to-learn {
+  @extend .box-1;
+  @extend .why-learn-french;
+}
+.box-5.french-language-learning-tools {
+  @extend .box-1;
+  @extend .why-learn-french;
+}
+a.in-text-nav-button {
+    display:inline-block;
+    width: 210px;
+    padding: 10px 0; 
+    margin-top: 10px;
+    position:relative;
+    text-decoration: none;
+    color: $dark-font-color;
+    border-radius: 35px;
+    border: 1.5px solid $light-blue-accent;
+    text-align: center;
+
+    font-family: $header-font-family;
+    font-size: $body-font-size;
+    color: $light-font-color;
+    background-color: $medium-blue-accent;
+}
+
+.in-text-nav-button:hover {
+  background-color: $light-blue-accent;
+}
+.in-text-nav-button:hover i {
+color: $medium-red-accent;
+}
+
+.in-text-nav-button:active {
+  background-color: $bold-blue-accent;
+}
+// BOX 6 FRENCH SPEAKING COUNTRIES
+.box-6.french-speaking-countries { //Francophone Countries
+  // grid-column: 3/13;
+  // grid-row: 5;
+  @extend .box-1,.why-learn-french;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+.box-6.french-speaking-countries h2 {
+  text-align: center;
+}
+.fi {
+  // padding: 10px 10px 0px 0px;
+  font-size: 65px;
+  display: block;
+  margin: 25px 5px;
+  text-align: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  // border-bottom: 1px dotted $dark-font-color; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: $dark-font-color-clear;
+  color: $dark-font-color;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 85%; /* At the bottom of the tooltip */
+  left: 0%; /* At left start */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+// BOX 7 WHO IS THIS SITE FOR
+.box-7.who-is-this-site-for {
+  margin-left: 0;
+  margin-top: 50px;
+  padding: 40px 40px;
+  padding-left: 5px; 
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: $main-background-color;
+  border-right: 15px solid $bold-red-accent;
+  border-left: 5px solid $medium-red-accent;
+  box-shadow: none;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  min-height: 700px;
+  // align-self:center;
+  font-size: calc($body-font-size + 2px);
+}
+
+.box-7.who-is-this-site-for h2 {
+  color: $light-font-color;
+  background-color: $bold-red-accent;
+  position: relative;
+  z-index: 10;
+}
+.box-7.who-is-this-site-for label {
+  font-size: calc($body-font-size + 2px);
+  position: relative;
+  z-index: 10;
+}
+
+figure.site-users {
+  margin-top: 20px;
+  position: relative;
+}
+
+figcaption.site-users {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  color: $light-font-color;
+  font-size: medium;
+  text-align: center;
+}
+
+img.site-users {
+  // background-color: $light-red-accent;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+  border-right: 8px solid $bold-blue-accent;
+}
+
+.site-users .hidden-image {
+  display: none;
+}
+
+// BOX 8 SUBSCRIBE TO NEWSLETTER
+.box-8.subscribe-to-newsletter {
+  margin-right: 0;
+  margin-top: 50px;
+  padding: 40px 40px;
+  padding-right: 5px; 
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  background-color: $main-background-color;
+  border-left: 15px solid $bold-red-accent;
+  border-right: 5px solid $medium-red-accent;
+  box-shadow: none;
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  min-height: 700px;
+  // align-self: center;
+  position: relative;
+  font-size: calc($body-font-size + 2px);
+}
+
+img.french-bunding-image,
+img#french-bunding-image {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 2%;
+  opacity: 0.2;
+  z-index: 0;
+}
+.box-7.who-is-this-site-for p,
+.box-8.subscribe-to-newsletter p {
+  font-size: calc($body-font-size + 2px);
+}
+.box-8.subscribe-to-newsletter h2,
+.box-8.subscribe-to-newsletter p {
+  position: relative;
+  z-index: 10;
+  text-align: right;
+}
+.social-buttons-container {
+  text-align: center;
+}
+.box-8.subscribe-to-newsletter h2 {
+  color: $light-font-color;
+  background-color: $bold-red-accent;
+}
+
+.box-8.subscribe-to-newsletter a.social-buttons {
+  color: $bold-red-accent;
+  -webkit-text-stroke: 0.5px $light-red-accent;
+
+}
+
+.box-8.subscribe-to-newsletter a.social-buttons:hover {
+  color: $light-red-accent;
+}
+
+.box-8.subscribe-to-newsletter blockquote {
+  display:block;
+  font-size: calc($body-font-size + 2px);
+  padding: 10px 10px;
+  border-left: 8px solid $bold-blue-accent;
+  // border-right: 8px solid $bold-red-accent;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 5px;
+  align-self: center;
+  background-color: $main-background-color;
+  color: $dark-font-color;
+  // text-shadow: 1px 1px 2px black;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+}
+
+.box-8.subscribe-to-newsletter blockquote .fa-solid.fa-star, 
+.box-8.subscribe-to-newsletter blockquote .fa-solid.fa-star-half {
+  color: gold;
+  text-shadow: 1px 1px 2px $dark-font-color-clear;
+  font-size: calc($body-font-size + 5px);
+}
+
+.box-8.subscribe-to-newsletter blockquote cite {
+  display: block;
+  text-align: right;
+  font-weight: bold;
+}
+
+// BOX 9 THE COMMENTS SECTION
+.box-9 * {
+  display: block; 
+}
+
+.box-9.comments-section {
+  display: block;
+  font-size: $body-font-size;
+  background-color: $light-red-accent;
+  border-right: $bold-red-accent 3px solid;
+  border-bottom: $bold-red-accent 3px solid;;
+  box-shadow: 0px 8px 16px 0px $dark-font-color-clear;
+  padding: 40px 20px;
+}
+
+.box-9 h3 {
+  text-align: justify;
+  padding-bottom: 20px;
+}
+
+#all-published-comments {
+  max-height: 800px;
+  overflow-y: scroll;
+}
+.published-comment-container {
+  border-radius: 15px;
+  background-color: $main-background-color;
+  border-bottom: $medium-red-accent solid 4px;
+  border-right: $medium-red-accent solid 3px;
+  margin-bottom: 0;
+}
+
+.user-comment-form {
+  margin-top: 10px;
+  width: 100%;
+}
+.user-comment-form label {
+  margin-bottom: 10px;
+  padding: 0 5px;
+  font-family: $header-font-family;
+}
+
+.user-comment-form ::placeholder {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+}
+
+.user-comment-form input,
+.user-comment-form textarea {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  max-height: 120px;
+  padding: 10px 10px;
+  border-radius: 25px;
+  border: 1px $light-red-accent;
+  font-family: $body-font-family;
+  color: $dark-font-color;
+}
+p.published-comment-author {
+  font-size: $body-font-size;
+  font-weight: bold;
+  border-bottom: $dark-font-color-clear 1px solid;
+  text-transform: capitalize;
+}
+.published-comment-author .fa-circle-user {
+  font-size: calc($body-font-size*1.2);
+  display: inline-block;
+  color: $bold-red-accent;
+  padding-right: 5px;
+}
+p.published-comment-comment {
+  font-size: $body-font-size;
+  padding-left: calc(10px + $body-font-size*1.2);
+}
+p.published-comment-location {
+  font-size: calc($body-font-size - 2px);
+  text-transform: capitalize;
+  display: inline-block;
+  border-bottom: $dark-font-color-clear 1px solid;
+  padding-right: 0;
+  padding-left: calc(10px + $body-font-size*1.2);
+}
+.published-comment-location .fa-location-dot, 
+.published-comment-date .fa-calendar-day {
+  color: $bold-red-accent;
+  display: inline-block;
+  padding-right: 5px;
+}
+p.published-comment-date {
+  font-size: calc($body-font-size - 2px);
+  color: $dark-font-color;
+  text-transform: capitalize;
+  font-style: italic;
+  border-bottom: $dark-font-color-clear 1px solid;
+  display: inline-block;
+  padding-left: 5px;
+}
+
+// .box-7 { //Who is this site for
+//   grid-column: 10/13;
+//   grid-row: 1;
+//   border: inset 5px $medium-red-accent ;
+//   color: $main-background-color;
+//   text-align: left;
+//   padding: 10px 10px;
+
+//   background-color: rgba(139, 104, 98, 0.9);
+// }
+
+// .box-8 { //Subscribe
+//   grid-column: 1/3;
+//   grid-row: 5;
+//   display: block;
+//   position: relative;
+// }
+
+// .grid-container-2 {
+//   display:grid;
+//   grid-template-columns: repeat(1fr, 5);
+//   grid-template-rows: repeat(auto, 2);
+//   gap: 5px;
+//   text-align: center;
+
+//   margin-top: 40px;
+
+//   background-color: $bold-blue-accent;
+// }
+
+// .grid-container-2 ul,
+// .grid-container-2 h5 {
+//   list-style-type: none;
+//   text-align: left;
+//   padding: 0 10px;
+//   color: $light-font-color;
+// }
+
+// .grid-container-2 a:link,
+// .grid-container-2 a:visited,
+// .grid-container-2 li {
+//   display:block;
+//   color: $light-font-color;
+
+//   text-decoration: underline solid 2px $bold-blue-accent;
+//   padding-top: 5px;
+// }
+
+// .grid-container-2 a:hover,
+// .grid-container-2 a:active {
+//   color: $light-font-color;
+//   font-weight: 800;
+//   text-decoration: underline solid 2px $bold-brown-accent;
+// }
+
+// .box-9 {
+//   grid-column: 1;
+//   grid-row: 1;
+// }
+
+// .box-10 {
+//   grid-column: 2;
+//   grid-row: 1;
+// }
+
+// .box-11 {
+//   grid-column: 3;
+//   grid-row: 1;
+// }
+
+// .box-12 {
+//   grid-column: 4;
+//   grid-row: 1;
+// }
+
+// .box-13 {
+//   grid-column: 5;
+//   grid-row: 1;
+// }
+
+// // Styling BOX 1: Why learn French 
+// .box-1 ul {
+//   list-style-type: square;
+//   // margin-left: 30px;
+//   padding-left: 30px;
+// }
+
+// .box-1 li {
+//   font-size: calc($body-font-size + 3px);
+//   padding-bottom: 2px;
+//   font-weight: 800;
+//   text-align: left;
+// }
+
+// .box-1 li {
+//   font-weight: 800;
+//   list-style-image: url("bullet-icon.ico");
+// }
+
+// .box-1 h3 {
+//   padding: 10px 0;
+//   margin: 0 0;
+//   color: $bold-red-accent;
+//   font-family: $subheader-font-family;
+//   font-style: italic;
+//   text-align: center;
+// }
+
+// .fi {
+//     font-size: 65px;
+//     // display: block;
+//     margin: 25px 5px;
+// }
+
+// blockquote {
+//   display:block;
+//   font-size: calc($body-font-size + 4px);
+//   padding: 10px 10px;
+//   border-left: 8px solid $bold-red-accent;
+//   margin-top: 5px;
+//   width: 100%;
+//   border-radius: 5px;
+//   align-self: center;
+//   background-color: $light-brown-accent;
+//   color: $main-background-color;
+//   text-shadow: 1px 1px 2px black;
+//   box-shadow: 1px 1px 3px black;
+// }
+
+// blockquote cite {
+//   display: block;
+//   text-align: right;
+//   background-color: $light-brown-accent;
+  
+// }
+
+// Assistance from https://www.w3schools.com/css/css_tooltip.asp
+/* Tooltip container */
+
+
+// //   Assistance from https://www.w3schools.com/howto/howto_css_newsletter.asp 
+//   /* Style the form element with a border around it */
+
+//     .form-container {
+//     padding: 8px 10px;
+//     background-color: $clear-red-accent;
+//     border-radius: 5px;
+//   }
+
+//   a.social-buttons:link,
+//   a.social-buttons:visited {
+//     color: $bold-red-accent;
+//     text-decoration: none;
+//   }
+
+//   a.social-buttons:hover,
+//   a.social-buttons:active {
+//     color: $medium-red-accent;
+//     text-decoration: none;
+//   }
+
+//   .box-8 h2, 
+//   .box-8 p {
+//     position: relative;
+//     z-index: 1;
+//   }
+
+//   .box-8 .bunding img{
+//     display: block;
+//     position: absolute;
+//     z-index: 0;
+//     top: 0%;
+//     left:0%;
+//     width: 100%;
+//     opacity: 0.2;
+//   }
+  
+  /* Style the input elements and the submit button */
+  .subscribe input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: $header-font-family;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: $bold-red-accent;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid $dark-font-color-clear;
+    font-family: $header-font-family;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+  .copyrights-footer p,
+  .copyrights-footer a, 
+  .copyrights-footer h6{
+    color: $dark-font-color;
+    text-align: center;
+    font-size: calc($body-font-size - 1px);
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 400;
+  }
+
+  .copyrights-footer a:hover {
+    color: $dark-font-color-clear;
+    font-weight: 800;
+  }
+
+
+table {
+  border-collapse: collapse;
+  width:100%;
+  font-size: calc($body-font-size + 2px);
+}
+td, th {
+  padding: 12px 12px;
+  width: 50%;
+}
+
+th {
+  background-color: $medium-blue-accent;
+  font-family: $header-font-family;
+  font-weight: 400;
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: $light-blue-accent;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+tr:hover {
+  background-color: $medium-red-accent;
+}
+
+.fa-angles-right,
+.fa-users,
+.fa-clapperboard {
+  color:$bold-red-accent;
+  // font-size: 20px;
+}
+
+.simple-verb-navigation,
+.simple-verb-navigation a:link {
+  display:inline-block;
+  color:$dark-font-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2px 5px;
+}
+
+.simple-verb-navigation {
+  display:inline-block;
+  color:$dark-font-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+}
+
+.simple-verb-navigation a:link,
+.simple-verb-navigation a:visited {
+  display:inline-block;
+  color:$dark-font-color;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.simple-verb-navigation a:hover,
+.simple-verb-navigation a:active {
+  display:inline-block;
+  color:$dark-font-color;
+  background-color: $medium-red-accent;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.vocabulary-verb-tables p a:link,
+.vocabulary-verb-tables a:visited {
+  display: block;
+  text-align: right;
+
+  color:$dark-font-color;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.vocabulary-verb-tables a:hover,
+.vocabulary-verb-tables a:active {
+  color:$bold-red-accent;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.notAllowed:hover {
+  cursor: not-allowed;
+}
+
+footer {
+  background-color: $bold-blue-accent;
+  margin-top: 50px;
+  padding: 10px 50px;
+  width: 100%;
+  color: $dark-font-color;
+}
+footer a:link, footer a:visited {
+  text-decoration: none;
+  color: $dark-font-color;
+}
+footer a:hover {
+  color: $light-blue-accent;
+  cursor: pointer;
+}
+footer a:active {
+  text-decoration: underline 2px $light-blue-accent;
+  font-weight: bold;
+  color: $light-font-color;
+}
+
+footer ul {
+  list-style-type: none;
+}
+footer li {
+  padding-bottom: 5px;
+}
+footer h5 {
+  text-align: left;
+  padding: 0 0;
+  padding-bottom: 5px;
+}
+.homepage-footer-site-map,
+.phrasebooks-footer-site-map,
+.vocabulary-footer-site-map,
+.grammar-footer-site-map,
+.immersive-footer-site-map {
+  display: inline-block;
+  width: 19%;
+  vertical-align: top;
+  padding-right: 5px;
+}

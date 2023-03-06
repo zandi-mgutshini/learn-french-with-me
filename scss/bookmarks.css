@@ -1,0 +1,13 @@
+h2 .fa-bookmark {
+  color: #C94B40;
+  -webkit-text-stroke: 3px #C94B40;
+}
+
+#savedArticle1,
+#savedArticle2,
+#savedArticle3,
+#savedArticle4,
+#savedArticle5,
+#savedArticle6 {
+  display: none;
+}/*# sourceMappingURL=bookmarks.css.map */

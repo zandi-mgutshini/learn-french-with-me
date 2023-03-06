@@ -1,0 +1,36 @@
+
+// Browns 
+$bold-brown-accent: #2F2723;
+$medium-brown-accent: #6B574C;
+$light-brown-accent: #98715D;
+// Reds
+$bold-red-accent: #C94B40;
+$medium-red-accent: #DB9C93;
+$light-red-accent: #EDCBC3; 
+$clear-red-accent:#edcbc380;
+//Blues
+$bold-blue-accent: #038199;
+$medium-blue-accent: #81BDC6;
+$light-blue-accent: #C0DBDD;
+$clear-blue-accent: #c0dbdd80;
+// Font and Background Colors
+$main-background-color: #ffffff;
+$main-background-color-clear: #ffffffa5;
+$dark-font-color: #090807;
+$dark-font-color-clear: #09080726;
+$light-font-color: #FEF9F3;
+$body-font-size: 16px;
+
+h2 .fa-bookmark {
+  color: $bold-red-accent;
+  -webkit-text-stroke: 3px $bold-red-accent;
+}
+
+#savedArticle1,
+#savedArticle2,
+#savedArticle3,
+#savedArticle4,
+#savedArticle5,
+#savedArticle6 {
+  display: none;
+}
