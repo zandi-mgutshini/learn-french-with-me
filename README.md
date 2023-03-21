@@ -15,7 +15,16 @@ The functional html webpages are the **Homepage** (index.html); **Vocabulary > V
 More pages are expected to go live in April 2023. 
 JavaScript functionality across all pages is due to js/index.js and styling is linked to main.css for all pages. bookmarks.css is the stylesheet for a few elements on bookmarks.html . 
 
-## 2. New Features
-### All Pages  
+## 2. NEW FEATURES
+### All Pages 
 * Dropdown navigation bar using jQuery 
-* Full-width search bar with finctionality expected in  
+* Full-width search bar styled and positioned (however functionality expected in April 2023). 
+* Footer with sitemap for existing pages and expected pages 
+
+## Homepage Features
+* Carousel of images using CSS 
+* Image animations and chained effects 
+* Checkbox that dynamically changes according to selection
+* Custom tooltips using CSS 
+* Functional bookmark feature for homepage articles
+* 
