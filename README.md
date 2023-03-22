@@ -64,5 +64,13 @@ If installation is completed successfully the main directory should contain the 
 * The scss folder. This scss folder should contain:
   * 2 css files: main.css; bookmarks.css
   * 2 scss files: main.scss; bookmarks.scss
-  * The folder why-french containing: carousel-image-1.jpg; carousel-image-2.jpg; carousel-image-3.jpg; carousel-image-4.jpg; carousel-image-     5.jpg; french-bullet-pint.png; french-flag-bullet.png
-* The images folder
+  * The folder css-images containing: carousel-image-1.jpg; carousel-image-2.jpg; carousel-image-3.jpg; carousel-image-4.jpg; carousel-image-5.jpg; french-bullet-pint.png; french-flag-bullet.png
+* The images folder. This images folder should contain: 
+ * 9 image files: context-photo-1.jpg; context-photo-2.jpg; context-photo-3.jpg; context-photo-4.jpg; context-photo-5.jpg; context-photo-6.jpg; french-bunding.png; site-users-loading.jpg; site-users-success.jpg
+ * The folder why-french containing: language-graph.jpg
+
+## 4. COLLABORATORS
+This website uses the ![Flag Icon Repository]() created by @koppi and @lupis. 
+All images are credited on the website. 
+This repository uses jQuery, Font Awesome Icon Library and Google Fonts. 
+
