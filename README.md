@@ -41,4 +41,8 @@ JavaScript functionality across all pages is due to js/index.js and styling is l
 * Table of commonly used greetings and phrases 
 
 ## 3. INSTALLATION
-*  
+* Download all files
+* Ensure all files are in one directory.
+* Ensure all js files are enclosed in a subfolder called js.
+* Ensure all css files are enclosed in a subfolder called scss.
+* Ensure all image files are enclosed in a subfolder called images. 
