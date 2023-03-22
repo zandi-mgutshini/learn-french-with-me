@@ -72,7 +72,7 @@ If installation is completed successfully the main directory should contain the 
  * The folder why-french containing: language-graph.jpg
 
 ## 4. COLLABORATORS
-This website uses the wonderful![Flag Icon Repository](https://flagicons.lipis.dev) created by @koppi and @lupis. 
+This website uses the wonderful [Flag Icon Repository](https://flagicons.lipis.dev) created by @koppi and @lupis. 
 All images are credited on the website and are from sources like Unsplash and Statista. 
 This project uses jQuery, Font Awesome Icon Library and Google Fonts. 
 
