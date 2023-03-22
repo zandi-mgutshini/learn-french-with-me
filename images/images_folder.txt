@@ -1,1 +1,0 @@
-Create images folder for images used in HTML 
