@@ -42,7 +42,27 @@ JavaScript functionality across all pages is due to js/index.js and styling is l
 
 ## 3. INSTALLATION
 * Download all files
-* Ensure all files are in one directory.
-* Ensure all js files are enclosed in a subfolder called js.
-* Ensure all css files are enclosed in a subfolder called scss.
-* Ensure all image files are enclosed in a subfolder called images. 
+* Ensure all files are in a single directory referred to as the main directory.
+* Ensure all js files are enclosed in a subfolder in the main directory called js.
+* Ensure all css and scss files are enclosed in a subfolder in the main directory called scss.
+  * Site users require files that end in .css, specifically main.css and bookmarks.css, in the scss subfolder. 
+  * All .scss files (and associated .map files) are available for developer use.
+* In the subfolder scss, ensure that a subsubfolder called css-images encloses 7 image files:
+   carousel-image-1.jpg, carousel-image-2.jpg, carousel-image-3.jpg, carousel-image-4.jpg, carousel-image-5.jpg, french-bullet-pint.png, and 
+   french-flag-bullet.png. 
+   These image files are used to make the Homepage css carousel and for bullet point images on the Homepage.
+   
+* Ensure all remaining image files are enclosed in a subfolder called images.
+  * In the images subfolder, ensure language-graph.jpg is enclosed in a subsubfolder called why-french. This image is used in an artical on       the Homepage titled *Why Learn French*.
+
+If installation is completed successfully the main directory should contain the following:
+* The .html files: index.html; bookmarks.html; phrase-books.html; vocabulary-verbs.html
+* The favicon file: favicon.ico
+* This file: README.md
+* The js folder. This js folder should contain: 
+  * 1 javascript file: index.js 
+* The scss folder. This scss folder should contain:
+  * 2 css files: main.css; bookmarks.css
+  * 2 scss files: main.scss; bookmarks.scss
+  * The folder why-french containing: carousel-image-1.jpg; carousel-image-2.jpg; carousel-image-3.jpg; carousel-image-4.jpg; carousel-image-     5.jpg; french-bullet-pint.png; french-flag-bullet.png
+* The images folder
