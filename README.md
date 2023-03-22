@@ -18,13 +18,27 @@ JavaScript functionality across all pages is due to js/index.js and styling is l
 ## 2. NEW FEATURES
 ### All Pages 
 * Dropdown navigation bar using jQuery 
-* Full-width search bar styled and positioned (however functionality expected in April 2023). 
+* Full-width search bar styled and positioned (however functionality expected in April 2023)
 * Footer with sitemap for existing pages and expected pages 
 
-## Homepage Features
-* Carousel of images using CSS 
+### Homepage 
+* Carousel of images using CSS
 * Image animations and chained effects 
 * Checkbox that dynamically changes according to selection
 * Custom tooltips using CSS 
-* Functional bookmark feature for homepage articles
-* 
+* Functional bookmark buttons add/remove homepage articles from bookmarks webpage using local storage
+* Newsletter subscription form *without* form handling (however functionality expected in April 2023)
+* Functional comments section with comment form using local storage 
+
+### Bookmarks 
+* Saved bookmarked articles displayed on bookmarks page
+* Remove bookmarked articles from page view using local storage 
+
+### Vocabulary > Verbs 
+* Table of present tense commonly used verbs 
+
+### Phrasebooks > Bonjour 
+* Table of commonly used greetings and phrases 
+
+## 3. INSTALLATION
+*  
