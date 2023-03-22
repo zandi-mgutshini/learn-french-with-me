@@ -1,6 +1,5 @@
 # Learn French with Me website Read Me
-### Version 1
-### March 2023
+Version 1 | 22 March 2023
 
 ## Description
 A website with multiple pages for English speakers interested in accessing French learning tools. The aim of this website is to showcase HTML, JS, CSS, and JSON skills across multiple webpages in a single website. The key features of this project include a dropdown navigation bar using jQuery, a CSS image carousel, and a functional comments section and bookmarks page. 
@@ -68,8 +67,8 @@ If installation is completed successfully the main directory should contain the 
   * 2 scss files: main.scss; bookmarks.scss
   * The folder css-images containing: carousel-image-1.jpg; carousel-image-2.jpg; carousel-image-3.jpg; carousel-image-4.jpg; carousel-image-5.jpg; french-bullet-pint.png; french-flag-bullet.png
 * The images folder. This images folder should contain: 
- * 9 image files: context-photo-1.jpg; context-photo-2.jpg; context-photo-3.jpg; context-photo-4.jpg; context-photo-5.jpg; context-photo-6.jpg; french-bunding.png; site-users-loading.jpg; site-users-success.jpg
- * The folder why-french containing: language-graph.jpg
+   * 9 image files: context-photo-1.jpg; context-photo-2.jpg; context-photo-3.jpg; context-photo-4.jpg; context-photo-5.jpg; context-photo-6.jpg; french-bunding.png; site-users-loading.jpg; site-users-success.jpg
+   * The folder why-french containing: language-graph.jpg
 
 ## 4. COLLABORATORS
 This website uses the wonderful [Flag Icon Repository](https://flagicons.lipis.dev) created by @koppi and @lupis. 
