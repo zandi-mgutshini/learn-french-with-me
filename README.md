@@ -4,6 +4,8 @@
 
 ## Description
 A website with multiple pages for English speakers interested in accessing French learning tools. The aim of this website is to showcase HTML, JS, CSS, and JSON skills across multiple webpages in a single website. The key features of this project include a dropdown navigation bar using jQuery, a CSS image carousel, and a functional comments section and bookmarks page. 
+![LearnFrenchWithMe Homepage](/learn-french-image.png).
+This project is a work in progress and full-functionality has not yet been accomplished. I look forward to sharing my progress in the versions that follow. 
 ### Table of Contents 
 1. Contents
 2. New Features
@@ -70,7 +72,7 @@ If installation is completed successfully the main directory should contain the 
  * The folder why-french containing: language-graph.jpg
 
 ## 4. COLLABORATORS
-This website uses the ![Flag Icon Repository]() created by @koppi and @lupis. 
-All images are credited on the website. 
-This repository uses jQuery, Font Awesome Icon Library and Google Fonts. 
+This website uses the wonderful![Flag Icon Repository](https://flagicons.lipis.dev) created by @koppi and @lupis. 
+All images are credited on the website and are from sources like Unsplash and Statista. 
+This project uses jQuery, Font Awesome Icon Library and Google Fonts. 
 
